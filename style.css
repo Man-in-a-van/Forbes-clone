@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+main {
+    background-color: #e2e2e2;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181716;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0px;
+
+}
+
+#center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#header h1 {
+    color: white;
+    font-size: 2.5em;
+    font-family: "Times New Roman";
+}
+
+#header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+#nav {
+    padding: 5px 10px 0px 20px;
+    cursor: pointer;
+}
+
+#sub {
+    text-decoration: none;
+    color: white;
+    background-color: #c20000;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-right: 32px;
+}
+
+#login {
+    background: none;
+    color: #fff;
+    border: none;
+    padding: 10px 5px;
+    margin-right: 32px;
+    cursor: pointer;
+
+}
+
+#search {
+    padding: 5px 20px 0 0;
+    cursor: pointer;
+}
+
+#main-content {
+    padding: 58px 0 16px;
+    margin: 0 auto;
+}
+
+#breaking,
+h3 {
+    font-size: .7em;
+    color: white;
+    background: red;
+    padding: 8px;
+    margin: 0 auto 0 13px;
+}
+
+#breaking-news {
+    background-color: white;
+    margin: 0 auto 16px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1820px;
+    padding: 20px 90px;
+    border-bottom: solid, thin, #737373;
+}
+
+#slider-wrapper {
+    overflow: hidden;
+    /*
+    -webkit-mask-image: -webkit-gradient(linear, left top, 
+    right bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+
+}
+
+#sliders {
+    display: flex;
+    flex-wrap: nowrap;
+    /*these 2 lines allow for silders to be hidden off page so that we can transition them on slide*/
+    width: 200%;
+}
+
+.slider {
+    min-width: 125px;
+    max-width: 20%;
+    height: 74px;
+    padding: 10px 13px 10px;
+    text-overflow: ellipsis;
+    /*these 5 lines clip the text after 2 lines and adds elipses*/
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    border-right-style: solid;
+    border-right-width: thin;
+    border-right-color: #737373;
+
+}
+
+.slider.last {
+    border-style: none;
+    -webkit-mask-image: -webkit-gradient(linear, left top,
+            right bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+}
+
+.slider p {
+    font-size: .8em;
+    color: #737373;
+    margin-bottom: 5px;
+}
+
+.slider a {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: ‘Merriweather’, Georgia, serif;
+
+}
+
+}
