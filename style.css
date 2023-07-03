@@ -83,7 +83,7 @@ main {
 }
 
 #main-content {
-    padding: 58px 0 16px;
+    padding: 16px 0 16px;
     margin: 0 20px;
 }
 
@@ -101,7 +101,7 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 1820px;
-    padding: 20px 50px 25px;
+    padding: 80px 50px 25px;
     border-bottom: 1px solid #e2e2e2;
 }
 
@@ -125,8 +125,14 @@ main {
     margin: 10px;
 }
 
+.no-opacity{
+    opacity: 0;
+    pointer-events: none;
+}
+
 #slider-wrapper {
     overflow: hidden;
+    position: relative;
 
 }
 
@@ -135,11 +141,16 @@ main {
     flex-wrap: nowrap;
     /*these 2 lines allow for silders to be hidden off page so that we can transition them on slide*/
     width: 200%;
+    transition: all 0.6s ease-in-out;
+}
+
+.animate-slide{
+    transform: translateX(-50%);
 }
 
 .slider {
     min-width: 125px;
-    max-width: 20%;
+    flex: 1;
     height: 74px;
     padding: 10px 13px 10px;
     text-overflow: ellipsis;
@@ -156,9 +167,13 @@ main {
     text-decoration: underline;
 }
 
-.slider.last {
-    border-style: none;
-    -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.3))); /*fading out end*/
+#shade{
+    position: absolute; /*code to position a fade out shadow next to the right arrow*/
+    top: 0;
+    right: 0;
+    width: 15%;
+    bottom: 0;
+    background: -webkit-gradient(linear,left top,right top,from(hsla(0,0%,100%,0)),to(#fff)); /*gradiet to fade out text*/
 }
 
 .slider p {
@@ -219,7 +234,7 @@ main {
     font-size: .9em;
     padding: 8px 10px;
     width: 150px;
-    margin: -16px auto 0;
+    margin: -14px auto 0;
     position: relative;
     z-index: 1;
 }
@@ -476,6 +491,7 @@ main {
     bottom: 0;
     left: 0;
     animation-delay: 2s;
+    animation-duration: 2s;
 }
 
 #bottom-right-border{
@@ -486,6 +502,7 @@ main {
     bottom: 0;
     right: 0;
     animation-delay: 2s;
+    animation-duration: 2s;
 }
 
 #qotd h2{
