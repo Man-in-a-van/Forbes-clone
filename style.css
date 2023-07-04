@@ -31,7 +31,87 @@ main {
     width: 100%;
     padding: 10px 0px;
     z-index: 1000;
+}
 
+#nav-bar{
+    background-color: #181716;
+    position: fixed;
+    top: 58px;
+    z-index: 3;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-button{
+    fill: #fff;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.nav-button:hover{
+    fill: #e1d599;
+}
+
+.animate-nav{
+    transform: translateX(-100%);
+}
+
+.nav-list{
+    background-color: #181716;
+    z-index: 2;
+    display: flex;
+    width: 280px;
+    justify-content: space-between; 
+    padding: 15px 15px 20px 25px;
+    align-items: center;
+    font-size: 18px;   
+}
+
+.nav-li:hover div.nav-list{
+    background-color: hsla(0,0%,100%,.08);
+}
+.nav-button-link{
+    color: #fff;
+    letter-spacing: .8px;   
+}
+
+.nav-arrow{
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+.side_list{
+    background-color: #181716;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 280px;
+    height: 472px;
+    display: none;
+    width: 280px;
+}
+
+.side_list ul{
+    list-style: none;    
+}
+
+.side_list li{
+    padding: 15px;
+}
+
+.side_list li:hover{
+    background-color: #3e3e3e;
+}
+
+.side_list a{
+    color: white;
+    font-size: 15px;
+}
+
+.nav-li:hover > div.side_list{
+    display: block;
 }
 
 #center {
@@ -53,11 +133,6 @@ main {
     padding: 0px 10px;
 }
 
-#nav {
-    padding: 5px 10px 0px 20px;
-    cursor: pointer;
-}
-
 #sub {
     text-decoration: none;
     color: white;
@@ -74,7 +149,6 @@ main {
     padding: 10px 5px;
     margin-right: 32px;
     cursor: pointer;
-
 }
 
 #search {

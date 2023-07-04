@@ -7,15 +7,21 @@
     <link rel="script" href="script.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <title>Forbes</title>
 </head>
 
 <body>
     <header>
         <div id="header">
-            <div id="nav">
-                <img src="images/Nav.jpg" alt="" id="navbutton">
+            <div>
+                <svg id="nav-open" class="nav-button" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 6v2H4V6h16zm0 5v2H4v-2h16zm0 5v2H4v-2h16z"></path>
+                </svg>
+                <svg id="nav-close" class="nav-button hidden" viewbox="0 0 20 20">
+                    <path d="M5.05 3.636L16.364 14.95l-1.414 1.414L3.636 5.05z"></path>
+                    <path d="M16.364 5.05L5.05 16.364 3.636 14.95 14.95 3.636z"></path>
+                </svg>
             </div>
             <div id="center">
                 <a href="index.html" id="Forbes">
@@ -31,99 +37,251 @@
                 </div>
             </div>
         </div>
+        <div id="nav-bar" class="animate-nav">
+            <ul id="nav-ul">
+                <li class="nav-li">
+                    <div class="nav-list">
+                        <a href="https://www.forbes.com/worlds-billionaires/" class="nav-button-link">
+                            Billionaires
+                        </a>
+                        <svg class="nav-arrow">
+                            <path d="M8.2 7.2L13 12l-4.8 4.8 1.5 1.4L16 12 9.7 5.8z"></path>
+                        </svg>
+                    </div>
+                    <div class="side_list">
+                        <ul>
+                            <li><a href="https://www.forbes.com/billionaires/">World's Billionaires</a></li>
+                            <li><a href="https://www.forbes.com/forbes-400/">Forbes 400</a></li>
+                            <li><a href="https://www.forbes.com/self-made-women/">America's Richest Self-Made Women</a></li>
+                            <li><a href="https://www.forbes.com/china-billionaires/">China's Richest</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-li">
+                    <div class="nav-list">
+                        <a href="https://www.forbes.com/digital-assets/" class="nav-button-link">
+                            Forbes Digital Assets
+                        </a>
+                        <svg class="nav-arrow">
+                            <path d="M8.2 7.2L13 12l-4.8 4.8 1.5 1.4L16 12 9.7 5.8z"></path>
+                        </svg>
+                    </div>
+                    <div class="side_list">
+                        <ul>
+                            <li><a href="https://www.forbes.com/digital-assets/">Home</a></li>
+                            <li><a href="https://www.forbes.com/digital-assets/crypto-prices/">Crypto Prices</a></li>
+                            <li><a href="https://www.forbes.com/digital-assets/research/">Research</a></li>
+                            <li><a href="https://www.forbes.com/digital-assets/learn/nfts/">NFTs</a></li>
+                            <li><a href="https://www.forbes.com/digital-assets/learn/crypto-investments/">Crypto Portfolios</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-li">
+                    <div class="nav-list">
+                        <a href="https://www.forbes.com/worlds-billionaires/" class="nav-button-link">
+                            Billionaires
+                        </a>
+                        <svg class="nav-arrow">
+                            <path d="M8.2 7.2L13 12l-4.8 4.8 1.5 1.4L16 12 9.7 5.8z"></path>
+                        </svg>
+                    </div>
+                    <div class="side_list">
+                        <ul>
+                            <li><a href="https://www.forbes.com/billionaires/">World's Billionaires</a></li>
+                            <li><a href="https://www.forbes.com/forbes-400/">Forbes 400</a></li>
+                            <li><a href="https://www.forbes.com/self-made-women/">America's Richest Self-Made Women</a></li>
+                            <li><a href="https://www.forbes.com/china-billionaires/">China's Richest</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-li">
+                    <div class="nav-list">
+                        <a href="https://www.forbes.com/worlds-billionaires/" class="nav-button-link">
+                            Billionaires
+                        </a>
+                        <svg class="nav-arrow">
+                            <path d="M8.2 7.2L13 12l-4.8 4.8 1.5 1.4L16 12 9.7 5.8z"></path>
+                        </svg>
+                    </div>
+                    <div class="side_list">
+                        <ul>
+                            <li><a href="https://www.forbes.com/digital-assets/">Home</a></li>
+                            <li><a href="https://www.forbes.com/digital-assets/crypto-prices/">Crypto Prices</a></li>
+                            <li><a href="https://www.forbes.com/digital-assets/research/">Research</a></li>
+                            <li><a href="https://www.forbes.com/digital-assets/learn/nfts/">NFTs</a></li>
+                            <li><a href="https://www.forbes.com/digital-assets/learn/crypto-investments/">Crypto Portfolios</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-li">
+                    <div class="nav-list">
+                        <a href="https://www.forbes.com/worlds-billionaires/" class="nav-button-link">
+                            Billionaires
+                        </a>
+                        <svg class="nav-arrow">
+                            <path d="M8.2 7.2L13 12l-4.8 4.8 1.5 1.4L16 12 9.7 5.8z"></path>
+                        </svg>
+                    </div>
+                    <div class="side_list">
+                        <ul>
+                            <li><a href="https://www.forbes.com/billionaires/">World's Billionaires</a></li>
+                            <li><a href="https://www.forbes.com/forbes-400/">Forbes 400</a></li>
+                            <li><a href="https://www.forbes.com/self-made-women/">America's Richest Self-Made Women</a></li>
+                            <li><a href="https://www.forbes.com/china-billionaires/">China's Richest</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-li">
+                    <div class="nav-list">
+                        <a href="https://www.forbes.com/worlds-billionaires/" class="nav-button-link">
+                            Billionaires
+                        </a>
+                        <svg class="nav-arrow">
+                            <path d="M8.2 7.2L13 12l-4.8 4.8 1.5 1.4L16 12 9.7 5.8z"></path>
+                        </svg>
+                    </div>
+                    <div class="side_list">
+                        <ul>
+                            <li><a href="https://www.forbes.com/digital-assets/">Home</a></li>
+                            <li><a href="https://www.forbes.com/digital-assets/crypto-prices/">Crypto Prices</a></li>
+                            <li><a href="https://www.forbes.com/digital-assets/research/">Research</a></li>
+                            <li><a href="https://www.forbes.com/digital-assets/learn/nfts/">NFTs</a></li>
+                            <li><a href="https://www.forbes.com/digital-assets/learn/crypto-investments/">Crypto Portfolios</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-li">
+                    <div class="nav-list">
+                        <a href="https://www.forbes.com/worlds-billionaires/" class="nav-button-link">
+                            Billionaires
+                        </a>
+                        <svg class="nav-arrow">
+                            <path d="M8.2 7.2L13 12l-4.8 4.8 1.5 1.4L16 12 9.7 5.8z"></path>
+                        </svg>
+                    </div>
+                    <div class="side_list">
+                        <ul>
+                            <li><a href="https://www.forbes.com/billionaires/">World's Billionaires</a></li>
+                            <li><a href="https://www.forbes.com/forbes-400/">Forbes 400</a></li>
+                            <li><a href="https://www.forbes.com/self-made-women/">America's Richest Self-Made Women</a></li>
+                            <li><a href="https://www.forbes.com/china-billionaires/">China's Richest</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-li">
+                    <div class="nav-list">
+                        <a href="https://www.forbes.com/worlds-billionaires/" class="nav-button-link">
+                            Billionaires
+                        </a>
+                        <svg class="nav-arrow">
+                            <path d="M8.2 7.2L13 12l-4.8 4.8 1.5 1.4L16 12 9.7 5.8z"></path>
+                        </svg>
+                    </div>
+                    <div class="side_list">
+                        <ul>
+                            <li><a href="https://www.forbes.com/digital-assets/">Home</a></li>
+                            <li><a href="https://www.forbes.com/digital-assets/crypto-prices/">Crypto Prices</a></li>
+                            <li><a href="https://www.forbes.com/digital-assets/research/">Research</a></li>
+                            <li><a href="https://www.forbes.com/digital-assets/learn/nfts/">NFTs</a></li>
+                            <li><a href="https://www.forbes.com/digital-assets/learn/crypto-investments/">Crypto Portfolios</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
-       <div id="breaking-news">
-                <h3>BREAKING</h3>
-                <div id="slider-main">
-                    <button class="slide-button no-opacity" id="slide-left">
-                        <svg viewBox="0 0 24 24">
-                            <path fill ="#fff" d="M10 5l-7 7 7 7 1.4-1.4L6.8 13H21v-2H6.8l4.6-4.6z"></path>
-                        </svg>
-                    </button>
-                    <div id="slider-wrapper">
-                        <div class="" id="sliders">
-                            <div class="slider">
-                                <p>2 Hours ago</p>
-                                <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
-                                    Michigan State University Shooting: At Least Three Killed, Suspect Found Dead
-                                </a>
-                            </div>
-                            <div class="slider">
-                                <p>2 Hours ago</p>
-                                <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
-                                    Michigan State University Shooting: At Least Three Killed, Suspect Found Dead
-                                </a>
-                            </div>
-                            <div class="slider">
-                                <p>2 Hours ago</p>
-                                <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
-                                    Michigan State University Shooting: At Least Three Killed, Suspect Found Dead
-                                </a>
-                            </div>
-                            <div class="slider">
-                                <p>2 Hours ago</p>
-                                <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
-                                    Michigan State University Shooting: At Least Three Killed, Suspect Found Dead
-                                </a>
-                            </div>
-                            <div class="slider">
-                                <p>2 Hours ago</p>
-                                <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
-                                    Trump Mocks Chris Christie—Again—After Christie Claims Trump Wishes He Was ‘Putin In America’
-                                </a>
-                            </div>
-                            <div class="slider">
-                                <p>2 Hours ago</p>
-                                <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
-                                    Ultra Rare ‘One Ring’ Trading Card Found—Attracting Million-Dollar Offers
-                                </a>
-                            </div>
-                            <div class="slider">
-                                <p>2 Hours ago</p>
-                                <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
-                                    Ultra Rare ‘One Ring’ Trading Card Found—Attracting Million-Dollar Offers
-                                </a>
-                            </div>
-                            <div class="slider">
-                                <p>2 Hours ago</p>
-                                <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
-                                    Ultra Rare ‘One Ring’ Trading Card Found—Attracting Million-Dollar Offers
-                                </a>
-                            </div>
-                            <div class="slider">
-                                <p>2 Hours ago</p>
-                                <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
-                                    Michigan State University Shooting: At Least Three Killed, Suspect Found Dead
-                                </a>
-                            </div>
-                            <div class="slider">
-                                <p>2 Hours ago</p>
-                                <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
-                                    ‘Hypocrisy’: Democrats Blast Supreme Court Justices For Accepting ‘Lavish Gifts’ After Striking Down Biden’s Student Loan Forgiveness
-                                </a>
-                            </div>
-                            <div id="shade"></div>
+        <div id="breaking-news">
+            <h3>BREAKING</h3>
+            <div id="slider-main">
+                <button class="slide-button no-opacity" id="slide-left">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="#fff" d="M10 5l-7 7 7 7 1.4-1.4L6.8 13H21v-2H6.8l4.6-4.6z"></path>
+                    </svg>
+                </button>
+                <div id="slider-wrapper">
+                    <div class="" id="sliders">
+                        <div class="slider">
+                            <p>2 Hours ago</p>
+                            <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
+                                Michigan State University Shooting: At Least Three Killed, Suspect Found Dead
+                            </a>
                         </div>
+                        <div class="slider">
+                            <p>2 Hours ago</p>
+                            <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
+                                Michigan State University Shooting: At Least Three Killed, Suspect Found Dead
+                            </a>
+                        </div>
+                        <div class="slider">
+                            <p>2 Hours ago</p>
+                            <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
+                                Michigan State University Shooting: At Least Three Killed, Suspect Found Dead
+                            </a>
+                        </div>
+                        <div class="slider">
+                            <p>2 Hours ago</p>
+                            <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
+                                Michigan State University Shooting: At Least Three Killed, Suspect Found Dead
+                            </a>
+                        </div>
+                        <div class="slider">
+                            <p>2 Hours ago</p>
+                            <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
+                                Trump Mocks Chris Christie—Again—After Christie Claims Trump Wishes He Was ‘Putin In America’
+                            </a>
+                        </div>
+                        <div class="slider">
+                            <p>2 Hours ago</p>
+                            <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
+                                Ultra Rare ‘One Ring’ Trading Card Found—Attracting Million-Dollar Offers
+                            </a>
+                        </div>
+                        <div class="slider">
+                            <p>2 Hours ago</p>
+                            <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
+                                Ultra Rare ‘One Ring’ Trading Card Found—Attracting Million-Dollar Offers
+                            </a>
+                        </div>
+                        <div class="slider">
+                            <p>2 Hours ago</p>
+                            <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
+                                Ultra Rare ‘One Ring’ Trading Card Found—Attracting Million-Dollar Offers
+                            </a>
+                        </div>
+                        <div class="slider">
+                            <p>2 Hours ago</p>
+                            <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
+                                Michigan State University Shooting: At Least Three Killed, Suspect Found Dead
+                            </a>
+                        </div>
+                        <div class="slider">
+                            <p>2 Hours ago</p>
+                            <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
+                                ‘Hypocrisy’: Democrats Blast Supreme Court Justices For Accepting ‘Lavish Gifts’ After Striking Down Biden’s Student Loan Forgiveness
+                            </a>
+                        </div>
+                        <div id="shade"></div>
                     </div>
-                    <button class="slide-button" id="slide-right">
-                        <svg viewBox="0 0 24 24">
-                            <path fill = "#fff" d="M12.6 6.4l4.6 4.6H3v2h14.2l-4.6 4.6L14 19l7-7-7-7z"></path>
-                        </svg>
-                    </button>
                 </div>
+                <button class="slide-button" id="slide-right">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="#fff" d="M12.6 6.4l4.6 4.6H3v2h14.2l-4.6 4.6L14 19l7-7-7-7z"></path>
+                    </svg>
+                </button>
             </div>
+        </div>
         <div id="main-content">
-            
+
             <div id="articles">
                 <div id="main-articles-container">
                     <div id="main-articles">
                         <div id="main-card" class="card">
                             <a href="https://www.forbes.com/sites/richardnieva/2023/02/17/google-microsoft-antitrust-openai-chatgpt/" class="thumbnail" id="main-thumbnail">
-                               <div class="image-wrapper">
-                                <img id="main-img" src="images/main%20article%20image.jpg" alt="">   
-                               </div>
-                                
+                                <div class="image-wrapper">
+                                    <img id="main-img" src="images/main%20article%20image.jpg" alt="">
+                                </div>
+
                                 <div id="main-card-border">
                                 </div>
                                 <h3>DAILY COVER STORY</h3>

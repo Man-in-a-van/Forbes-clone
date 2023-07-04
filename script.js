@@ -51,3 +51,13 @@ function toggleSlide(){
 
 document.getElementById("slide-right").onclick = toggleSlide;
 document.getElementById("slide-left").onclick = toggleSlide;
+
+function toggleNavButton(){
+    document.getElementById("nav-open").classList.toggle("hidden");
+    document.getElementById("nav-close").classList.toggle("hidden");
+    document.getElementById("nav-bar").classList.toggle("animate-nav");
+}
+
+document.getElementById("nav-open").onclick = toggleNavButton;
+document.getElementById("nav-close").onclick = toggleNavButton;
+
