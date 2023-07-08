@@ -22,13 +22,14 @@
                     <path d="M5.05 3.636L16.364 14.95l-1.414 1.414L3.636 5.05z"></path>
                     <path d="M16.364 5.05L5.05 16.364 3.636 14.95 14.95 3.636z"></path>
                 </svg>
-            </div>
             <div id="center">
                 <a href="index.html" id="Forbes">
                     <h1>Forbes</h1>
                 </a>
 
             </div>
+            </div>
+            
             <div id="header-right">
                 <a href="https://account.forbes.com/subscribe?eventSource=header&redirect=https://www.forbes.com/home_europe/" id="sub">Subscribe</a>
                 <button id="login">Sign in</button>
@@ -200,7 +201,9 @@
                     </svg>
                 </button>
                 <div id="slider-wrapper">
+                   <div id="shade"></div>
                     <div class="" id="sliders">
+                       
                         <div class="slider">
                             <p>2 Hours ago</p>
                             <a href="https://www.forbes.com/sites/tylerroush/2023/02/14/michigan-state-university-shooting-what-we-know-about-the-alleged-gunman/" class="breaking-title">
@@ -261,9 +264,10 @@
                                 ‘Hypocrisy’: Democrats Blast Supreme Court Justices For Accepting ‘Lavish Gifts’ After Striking Down Biden’s Student Loan Forgiveness
                             </a>
                         </div>
-                        <div id="shade"></div>
+                        
                     </div>
                 </div>
+                
                 <button class="slide-button" id="slide-right">
                     <svg viewBox="0 0 24 24">
                         <path fill="#fff" d="M12.6 6.4l4.6 4.6H3v2h14.2l-4.6 4.6L14 19l7-7-7-7z"></path>
@@ -452,31 +456,22 @@
                 <div id="bottom-left-border" class="animate-on-scroll-horizontal"></div>
                 <div id="bottom-right-border" class="animate-on-scroll-horizontal"></div>
                 <h2>QUOTE OF THE DAY</h2>
-                <h3>“Ultimately progress is measured through the eyes of users.”</h3>
-                <h4>Steve Ballmer, <span>Former CEO of Microsoft</span></h4>
+                <h3 id="quote">“Ultimately progress is measured through the eyes of users.”</h3>
+                <h4 id="quote-author">Steve Ballmer, <span>Former CEO of Microsoft</span></h4>
                 <div id="share-box">
+                   <div id="share-alert">
+                       Quote has been coppied to your clipboard
+                   </div>
                     <svg class="share-icon" viewBox="0 0 24 24">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M18 16.1c-.8 0-1.4.3-2 .8l-7.1-4.2c.1-.2.1-.5.1-.7s0-.5-.1-.7L16 7.2c.5.5 1.2.8 2 .8 1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3c0 .2 0 .5.1.7L8 9.8C7.5 9.3 6.8 9 6 9c-1.7 0-3 1.3-3 3s1.3 3 3 3c.8 0 1.5-.3 2-.8l7.1 4.2c-.1.2-.1.4-.1.6 0 1.6 1.3 2.9 2.9 2.9s2.9-1.3 2.9-2.9-1.2-2.9-2.8-2.9z"></path>
                     </svg>
                     <p>SHARE THIS</p>
-                    <svg class="share-icon social" viewBox="0 0 60 60">
-                        <path d="M32.9 49H25V30h-3.9v-6.6H25v-3.9c0-5.4 2.2-8.5 8.5-8.5h5.2v6.6h-3.3c-2.5 0-2.6.9-2.6 2.6v3.3h5.9l-.5 6.5H33v19h-.1z"></path>
-                    </svg>
-                    <svg class="share-icon social" viewBox="0 0 60 60">
-                        <path d="M22.2 38.9c-3.4-.3-6.1-1.7-7.5-5.1h3.6c-3.9-1.4-5.6-4.3-5.9-8.4 1.2.6 2.3.7 3.5.7-2.1-1.6-3.6-3.4-3.7-6.1-.1-1.5.5-2.8 1.3-4 4.4 5 9.7 8.3 16.5 8.9v-2.7c.1-1.9.6-3.6 1.9-5.1 2.5-2.8 6.9-3.1 9.8-.7.2.2.5.4.7.6.2.2.4.2.7.2 1.1-.3 2-.9 3-1.4.5-.3 1.1-.6 1.7-1-.4 1.1-.9 2-1.5 2.8-.6.8-1.3 1.6-2.2 2.2 1.6-.2 3.2-.6 4.8-1.1-.3.4-.6.8-.9 1.1l-2.7 2.4c-.1.1-.2.3-.2.4.1 3.3-.6 6.5-1.9 9.6-1.9 4.2-4.7 7.5-8.6 9.9-2.5 1.5-5.2 2.4-8.1 2.9-5.5.8-10.5-.5-15.1-3.3-.1 0-.1-.1-.2-.1h.2c1.1.5 2.2.4 3.3.3 2.3-.2 4.5-.9 6.6-2.1l.9-.6v-.3z"></path>
-                    </svg>
-                    <svg class="share-icon social" viewBox="0 0 60 60">
-                        <path d="M44.9 33.2v11h-6.4V34c0-2.6-.9-4.3-3.2-4.3-1.8 0-2.8 1.2-3.3 2.3-.2.4-.2 1-.2 1.6v10.7h-6.4s.1-17.4 0-19.2h6.4V27.9v-.1c.8-1.3 2.4-3.2 5.8-3.2 4.1 0 7.3 2.7 7.3 8.6zM18.7 15.8c-2.2 0-3.6 1.4-3.6 3.3 0 1.8 1.4 3.3 3.5 3.3 2.2 0 3.6-1.5 3.6-3.3 0-1.9-1.3-3.3-3.5-3.3zm-3.2 28.4h6.4V25h-6.4v19.2z"></path>
-                    </svg>
-                    <svg class="share-icon social" viewBox="0 0 20 20">
-                        <path class="fs-icon fs-icon--_xF106_" d="M17 15.2H3.2l5.2-4.3.6.4c.3.3.7.4 1.1.4s.8-.1 1.1-.4l.6-.5 5.2 4.4zm.6-9.2v8l-4.8-4 4.8-4zm-15 8V6l4.8 4-4.8 4zm7.8-3.6c-.2.2-.4.2-.6 0L3.6 5.2h13l-6.2 5.2z"></path>
-                    </svg>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <div id="footer-container">
+        <div id="footer-container1">
             <nav>
                 <ul>
                     <li><a href="index.html" id="forbes">Forbes</a></li>
@@ -548,6 +543,12 @@
                 <a href="https://www.forbes.com/fdc/privacy.html">Privacy statement</a>
                 <a href="http://preferences-mgr.truste.com/?pid=forbes01">AdChoices</a>
             </div>
+        </div>
+        <div id="footer-container2">
+            <a href="index.html" id="footer-logo">Forbes</a>
+            <a href="https://www.forbes.com/terms/">Terms and conditions</a>
+                <a href="https://www.forbes.com/fdc/privacy.html">Privacy statement</a>
+                <a href="http://preferences-mgr.truste.com/?pid=forbes01">AdChoices</a>
         </div>
     </footer>
     <script src="script.js"></script>

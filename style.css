@@ -8,10 +8,14 @@
     line-height: 1;
 }
 
+:root {
+    --slider-translate: 0%;
+    --slider-width: 200%;
+}
+
 a {
     text-decoration: none;
     color: black;
-
 }
 
 a h2:hover{
@@ -30,7 +34,7 @@ main {
     position: fixed;
     width: 100%;
     padding: 10px 0px;
-    z-index: 1000;
+    z-index: 10;
 }
 
 #nav-bar{
@@ -65,7 +69,7 @@ main {
     justify-content: space-between; 
     padding: 15px 15px 20px 25px;
     align-items: center;
-    font-size: 18px;   
+    font-size: 1.1rem;   
 }
 
 .nav-li:hover div.nav-list{
@@ -107,7 +111,7 @@ main {
 
 .side_list a{
     color: white;
-    font-size: 15px;
+    font-size: .9rem;
 }
 
 .nav-li:hover > div.side_list{
@@ -115,20 +119,21 @@ main {
 }
 
 #center {
-    position: absolute;
+    position: fixed;
+    top: 8px;
     left: 50%;
     transform: translate(-50%);
 }
 
 #header h1 {
     color: white;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-family: "Times New Roman";
+    letter-spacing: -2px;
 }
 
 #header-right {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     padding: 0px 10px;
 }
@@ -157,12 +162,12 @@ main {
 }
 
 #main-content {
-    padding: 16px 0 16px;
-    margin: 0 20px;
+    padding: 80px 16px 0;
+    margin: 0 20px 20px;
 }
 
 #breaking-news h3 {
-    font-size: .7em;
+    font-size: .7rem;
     color: white;
     background: red;
     padding: 8px;
@@ -171,11 +176,12 @@ main {
 
 #breaking-news {
     background-color: white;
-    margin: 0 auto 16px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     max-width: 1820px;
     padding: 80px 50px 25px;
+    margin-bottom: -60px;
     border-bottom: 1px solid #e2e2e2;
 }
 
@@ -186,7 +192,6 @@ main {
     background-color: rgba(51,51,51,.4);
     border-radius: 50%;
     border: none;
-    
 }
 
 .slide-button:hover{
@@ -213,13 +218,10 @@ main {
 #sliders {
     display: flex;
     flex-wrap: nowrap;
-    /*these 2 lines allow for silders to be hidden off page so that we can transition them on slide*/
-    width: 200%;
+    /*these 3 lines allow for silders to be hidden off page so that we can transition them on slide*/
+    width: var(--slider-width);
     transition: all 0.6s ease-in-out;
-}
-
-.animate-slide{
-    transform: translateX(-50%);
+    transform: translateX(var(--slider-translate));
 }
 
 .slider {
@@ -237,6 +239,7 @@ main {
     border-right-width: thin;
     border-right-color: #e2e2e2;
 }
+
 .slider a:hover{
     text-decoration: underline;
 }
@@ -245,19 +248,20 @@ main {
     position: absolute; /*code to position a fade out shadow next to the right arrow*/
     top: 0;
     right: 0;
-    width: 15%;
     bottom: 0;
+    width: 15%;
     background: -webkit-gradient(linear,left top,right top,from(hsla(0,0%,100%,0)),to(#fff)); /*gradiet to fade out text*/
+    z-index: 2;
 }
 
 .slider p {
-    font-size: .8em;
+    font-size: .8rem;
     color: #737373;
     margin-bottom: 5px;
 }
 
 .slider a {
-    font: 700 14px/1.71 Merriweather;
+    font: 700 .9rem/1.7 Merriweather;
 }
 
 #slider-main {
@@ -305,7 +309,7 @@ main {
 .card h3{
     background-color: #0066B2;
     color: white;
-    font-size: .9em;
+    font-size: .6rem;
     padding: 8px 10px;
     width: 150px;
     margin: -14px auto 0;
@@ -319,21 +323,21 @@ main {
 }
 
 .card a{
-    font: 400 12px Work Sans,sans-serif;
+    font: 400 .8rem Work Sans,sans-serif;
 }
 
 .card h2{
-    font: 700 24px Merriweather,serif;
+    font: 700 1.5rem Merriweather,serif;
 }
 
 .card p{
-    font: normal 16px tabular-numbers, Georgia;
+    font: normal 1rem tabular-numbers, Georgia;
 }
 
 .author{
     margin: 3px 0;
     display: block;
-    font-size: 14px;
+    font-size: .8rem;
 }
 
 .staff{
@@ -386,8 +390,8 @@ main {
 }
 
 .secondary-cards h2{
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .for-you-label{
@@ -396,12 +400,12 @@ main {
     padding: 6px 12px;
     width: fit-content;
     display: inline-block;
-    font-size: 12px;
+    font-size: .7rem;
 }
 
 .premium{
     display: inline-block;
-    font-size: 14px;
+    font-size: .8rem;
     color: #87743d;
     width 71px;
     margin-left: 8px;
@@ -414,7 +418,7 @@ main {
 
 .premium-cards a{
     display: block;
-    font: 600 16px/28px Merriweather,serif;
+    font: 600 1rem/1.6 Merriweather,serif;
     padding: 10px 0;
 }
 .premium-cards a:hover{
@@ -449,7 +453,7 @@ main {
 
 #pop-picks-nav button{
     background-color: transparent;
-    font-size: 20px;
+    font-size: 1.2rem;
     border-style: none;
     width: 50%;
 }
@@ -468,7 +472,7 @@ main {
 }
 
 #pop-articles a{
-    font: 600 16px/24px Merriweather,serif;   
+    font: 600 1rem/1.5 Merriweather,serif;   
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -485,7 +489,7 @@ main {
 }
 
 #editors-articles p{
-    font-size: 12px;
+    font-size: .8rem;
     color: #737373;
     padding-bottom: 4px;   
 }
@@ -501,6 +505,8 @@ main {
 }
 
 #qotd{
+    max-width: 1600px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -596,7 +602,19 @@ main {
 
 #qotd span{
     font-weight: 100;
-    font-size: 0.9em;
+    font-size: 0.9rem;
+}
+
+#share-alert{
+    position: absolute;
+    border-radius: 10px;
+    display: none;
+    opacity: 1;
+    padding: 10px;
+    background-color: #ccc;
+    width: max-content;
+    transform: translate(-33%, 10%);
+    transition: opacity 1s ease-in-out;
 }
 
 .share-icon{
@@ -607,10 +625,11 @@ main {
 #share-box{
     display: flex;
     align-items:center;
+    cursor: pointer;
 }
 
 #share-box p{
-    font-size: 0.9em;
+    font-size: 0.9rem;
     margin-left: 4px;
 }
 
@@ -623,7 +642,7 @@ footer{
     background-color: #f0f0f0;
 }
 
-#footer-container{
+#footer-container1{
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -640,11 +659,11 @@ nav ul{
 }
 
 #forbes{
-    font: 900 1.7em Times New Roman;
+    font: 900 1.8rem Times New Roman;
 }
 
 nav li{
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 
@@ -659,14 +678,14 @@ nav li{
 }
 
 .column-header{
-    font-size: 1.1em;
+    font-size: 1.1rem;
     margin-bottom: 5px;
 }
 
 .column-section{
     display: flex;
     flex-direction: column;
-    font-size: .8em;
+    font-size: .8rem;
     margin-bottom: 16px;
 }
 
@@ -693,7 +712,7 @@ nav li{
 }
 
 #magazine-links a{
-    font-size: 0.8em;
+    font-size: 0.8rem;
     color: red;
 }
 
@@ -704,7 +723,7 @@ nav li{
 }
 
 #footer-legal{
-    font-size: 0.8em;
+    font-size: 0.8rem;
     padding: 0 5px 20px 16px;
 }
 
@@ -712,4 +731,93 @@ nav li{
     border-left: 1px solid black;
     border-right: 1px solid black;
     padding: 0 8px;
+}
+#footer-container2{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+#footer-logo{
+    font-size: 2.5rem;
+    font-family: "Times New Roman";
+    font-weight: 900;
+    letter-spacing: -2px;
+    border-bottom: 1px solid #ccc;
+    width: 90%;
+    text-align: center;
+}
+#footer-container2 a{
+    padding: 10px;
+}
+
+@media (max-width:1025px){
+    #center{
+        left: 110px;
+    }
+    #main-content{
+        padding: 80px 0 0;
+    }
+    
+}
+ 
+@media (max-width:1680px){
+    #shade{
+        width: 20%;
+    }
+    #main-articles-container{
+        margin: 0;
+    }
+}
+
+@media (max-width:765px){
+    #breaking-news{
+        display: none;
+    }
+    #main-articles-container{
+        display: block;
+    }
+    #main-articles{
+        border-right: none;
+        margin: 0;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    .card{
+        padding: 0;
+    }
+    .secondary-cards:nth-child(2){
+        padding-left: 25px;
+    }
+    .secondary-cards{
+        padding-bottom: 8px;
+    }
+    .premium-cards{
+        padding: 20px 0;
+    }
+    #qotd{
+        font-size: 14px
+    }
+    #footer-container1{
+        display: none;
+    }
+    #footer-container2{
+        display: flex;
+    }
+}
+
+@media (max-width:481px){
+    #header h1{
+        font-size: 2rem;
+    }
+    #center{
+        left:100px;
+        top: 11px;
+    }
+    #sub, #login{
+        margin-right:10px;
+        padding: 8px;
+    }
+    #search{
+        padding-right: 5px;
+    }
 }
